@@ -18,7 +18,7 @@ Free to use, change, etc.
 
 <h5>To get started, you must register at least one user and administrator account. After that, this data will be transferred to the database and the next time you only need to log in.</h5>
   
-<h5>After registration, you need to go to the authorization window, enter the login and password and, first, click on the Login as Admin key. IIf the data was invalid, you will be thrown an Exception. </h5>
+<h5>After registration, you need to go to the authorization window, enter the login and password and, first, click on the Login as Admin key. If the data was invalid, you will be thrown an Exception. </h5>
 
 ![loginHiL](https://github.com/Deshq/HiL_Store/blob/master/HiL_Store/Resources/Screenshots/loginHiL.gif?raw=true)
   
