@@ -325,18 +325,18 @@
                 <Rectangle 
                     HorizontalAlignment="Left" 
                     Height="40" 
-                    Margin="421,672,0,0" 
+                    Margin="88,666,0,0" 
                     VerticalAlignment="Top" 
-                    Width="157" 
-                    Stroke="White"/>
+                    Width="156" 
+                    Stroke="White" RenderTransformOrigin="1.325,0.625"/>
 
                 <Button 
                     Content="Buy" 
                     HorizontalAlignment="Left" 
-                    Height="41" 
-                    Margin="421,672,0,0" 
+                    Height="40" 
+                    Margin="88,666,0,0" 
                     VerticalAlignment="Top" 
-                    Width="157" 
+                    Width="156" 
                     RenderTransformOrigin="0.495,1.19" 
                     Background="{x:Null}" 
                     BorderBrush="{x:Null}" 

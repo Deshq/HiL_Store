@@ -31,7 +31,7 @@ namespace HiL_Store.Commands.CreationCommands
                 switch (result)
                 {
                     case CreationProductResult.SuccessCreation:
-                        _adminViewModel.ErrorMessage2 = "Success creation quiz.";
+                        _adminViewModel.ErrorMessage2 = "Success creation product.";
                         break;
                     case CreationProductResult.EmptyData:
                         _adminViewModel.ErrorMessage2 = "Enter the data";
