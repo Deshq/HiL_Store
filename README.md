@@ -5,7 +5,10 @@
 ## Description
 
 <p align="center">
-<img src="https://media3.giphy.com/media/5j6AIDvKCeLApwAsbc/giphy.gif?cid=790b76112951564d545f339bf7cfbb9934545f784398a110&rid=giphy.gif&ct=g" width="80%"></p>
+
+![InterfaceScreenshot1](https://github.com/Deshq/HiL_Store/tree/master/HiL_Store/Resources/Screenshots/loginHiL.gif?raw=true)
+  
+</p>
 
 
 
