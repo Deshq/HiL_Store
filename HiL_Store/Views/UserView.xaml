@@ -1,0 +1,373 @@
+﻿<UserControl x:Class="HiL_Store.Views.UserView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HiL_Store.Views"
+             xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="750" d:DesignWidth="1000">
+
+
+
+    <Border CornerRadius="5" Background="Black">
+
+        <Grid>
+
+            <Grid x:Name="ChooseCategory" Margin="0,0,704,0">
+
+                <Grid x:Name="Image" 
+                      Margin="10,24,10,560">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="68*"/>
+                        <ColumnDefinition Width="45*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="191*"/>
+                        <RowDefinition Height="185*"/>
+                    </Grid.RowDefinitions>
+                    <Border 
+                        CornerRadius="12" 
+                        BorderBrush="White" 
+                        BorderThickness="2"              
+                        Height="113" 
+                        Width="267"
+                        HorizontalAlignment="Left" 
+                        VerticalAlignment="Top"
+                        Margin="5,20,0,0" 
+                        Grid.RowSpan="2" Grid.ColumnSpan="2">
+
+                        <Border.Background>
+                            <ImageBrush ImageSource="/Resources/HiL.png" 
+                                Stretch="UniformToFill"/>
+                        </Border.Background>
+                        <Grid>
+                            <Grid 
+                                HorizontalAlignment="Right" 
+                                VerticalAlignment="Top" 
+                                Margin="16">
+                                <Rectangle 
+                                    Height="21" 
+                                    RadiusX="8" 
+                                    RadiusY="8" 
+                                    Width="41" 
+                                    Fill="#FFF7542E"/>
+                                <TextBlock 
+                                    HorizontalAlignment="Center" 
+                                    VerticalAlignment="Center" 
+                                    Foreground="White" 
+                                    FontWeight="SemiBold" 
+                                    FontSize="8" 
+                                    Text="USER"/>
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </Grid>
+
+
+                <ComboBox x:Name="CmbBox" 
+                      SelectedIndex="0"
+                      Style="{StaticResource MaterialDesignComboBox}"
+                      FontFamily="NSimSun" 
+                      FontSize="16" 
+                      ItemsSource="{Binding GetCollection}"
+                      SelectedItem="{Binding Category}" 
+                      md:HintAssist.Hint="{Binding Name}"
+                      Margin="47,203,47,0" 
+                      VerticalAlignment="Top">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock 
+                                Text="{Binding Name}" 
+                                Foreground="White" 
+                                FontFamily="NSimSun" 
+                                FontSize="16"
+                                Background="Black">
+                                </TextBlock>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+
+                <Path 
+                    Data="M81.35,156.937 L373.799,156.937" 
+                    Fill="White" 
+                    HorizontalAlignment="Center" 
+                    Height="1" 
+                    Margin="0,229,0,0" 
+                    Stretch="Fill" 
+                    Stroke="White" 
+                    VerticalAlignment="Top" 
+                    Width="202"/>
+
+                <Rectangle 
+                    HorizontalAlignment="Left" 
+                    Height="41" 
+                    Margin="70,570,0,0" 
+                    VerticalAlignment="Top" 
+                    Width="157" 
+                    Stroke="White"/>
+                <Path 
+                    Data="M164,338 L124.16667,338 123.49966,369.5" 
+                    HorizontalAlignment="Left" 
+                    Height="32.5" 
+                    Margin="51,556,0,0" 
+                    Stretch="Fill"
+                    Stroke="White" 
+                    VerticalAlignment="Top" 
+                    Width="41.5" 
+                    RenderTransformOrigin="0.492,0.515"/>
+                <Path 
+                    Data="M164,338 L124.16667,338 123.49966,369.5" 
+                    HorizontalAlignment="Left" 
+                    Height="32.5" 
+                    Margin="206,595,0,0" 
+                    Stretch="Fill" 
+                    Stroke="White" 
+                    VerticalAlignment="Top" 
+                    Width="41.5" 
+                    RenderTransformOrigin="0.5,0.5">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="179.837"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <Button 
+                    Content="Search products" 
+                    HorizontalAlignment="Left" 
+                    Height="40" 
+                    VerticalAlignment="Top" 
+                    Width="156" 
+                    RenderTransformOrigin="0.495,1.19" 
+                    Background="{x:Null}" 
+                    BorderBrush="{x:Null}" 
+                    Foreground="White" 
+                    FontFamily="NSimSun" 
+                    FontSize="16"               
+                    Command="{Binding ChooseCategoryCommand}" 
+                    Margin="70,570,0,0"/>
+            </Grid>
+
+            <Path 
+                Data="M81.35,156.937 L373.799,156.937" 
+                Fill="White" 
+                HorizontalAlignment="Left" 
+                Height="40" 
+                Margin="-82,375,0,0" 
+                Stretch="Fill" 
+                Stroke="White" 
+                VerticalAlignment="Top" 
+                Width="758" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90.317"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+            <Grid x:Name="Test" Margin="301,0,0,0">
+
+                <TextBlock 
+                    HorizontalAlignment="Left" 
+                    Text="GROCERY LIST" 
+                    Height="32"
+                    Margin="100,43,0,0" 
+                    TextWrapping="Wrap" 
+                    VerticalAlignment="Top" 
+                    Width="132" 
+                    Foreground="White" 
+                    FontSize="20" 
+                    FontFamily="NSimSun" 
+                    TextAlignment="Center"/>
+
+                <Border CornerRadius="12" HorizontalAlignment="Left" Height="328" Margin="387,117,0,0" VerticalAlignment="Top" Width="225">
+                    <Border.Background>
+                        <ImageBrush ImageSource="/Resources/store.jpg" Stretch="UniformToFill"/>
+                    </Border.Background>
+                    <Grid>
+
+                        <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,60,0,0">
+                            <Rectangle Height="21" RadiusX="8" RadiusY="8" Width="41" Fill="#FFF7542E"/>
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="SemiBold" FontSize="8" Text="HiL Store"/>
+                        </Grid>
+
+                        <Grid HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,10" Height="66" Width="177">
+                            <Rectangle RadiusX="8" RadiusY="8" Fill="White" Opacity=".1"/>
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="12" ><Run Text="Online store HiL for buying various goods."/><LineBreak/><Run Text="Buy from us and be satisfied."/></TextBlock>
+                        </Grid>
+                    </Grid>
+                </Border>
+
+
+
+                <StackPanel HorizontalAlignment="Left" Margin="48,80,0,305" Width="236">
+
+                    <ComboBox x:Name="CmbBox2" 
+                      SelectedIndex="0"
+                      Style="{StaticResource MaterialDesignComboBox}"
+                      FontFamily="NSimSun" 
+                      FontSize="16" 
+                      ItemsSource="{Binding GetCollection2}"
+                      SelectedItem="{Binding Product}" 
+                      md:HintAssist.Hint="{Binding Name}"
+                      Margin="20,30,20,0" 
+                      VerticalAlignment="Top">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock 
+                                        Background="Black"
+                                        Foreground="White"
+                                        Text ="{Binding Product}"                                        
+                                        FontFamily="NSimSun" 
+                                        FontSize="16" >
+                                    </TextBlock>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <Path 
+                        Data="M81.35,156.937 L373.799,156.937" 
+                        Fill="White" 
+                        Height="1" 
+                        Stretch="Fill" 
+                        Stroke="White" 
+                        Width="202"/>
+                </StackPanel>
+
+
+                <TextBlock  
+                    Margin="48,560,415,137" 
+                    Foreground="White"  
+                    FontFamily="NSimSun" 
+                    FontSize="16" 
+                    Text="Count of products:" />
+                <TextBox 
+                    x:Name = "CountBox"
+                    HorizontalAlignment="Left" 
+                    Height="34" 
+                    Margin="48,577,0,0" 
+                    TextWrapping="Wrap"  
+                    VerticalAlignment="Top" 
+                    Width="236" 
+                    Foreground="White" 
+                    SelectionBrush="#FF232629" 
+                    FontFamily="NSimSun" 
+                    FontSize="16" 
+                    HorizontalContentAlignment="Left" 
+                    VerticalContentAlignment="Center" MaxLength="12"
+                    Text="{Binding Count}"/>
+
+                <Path 
+                    Data="M81.35,156.937 L373.799,156.937" 
+                    Fill="White" 
+                    HorizontalAlignment="Left" 
+                    Height="1" 
+                    Margin="48,612,0,0" 
+                    Stretch="Fill" 
+                    Stroke="White" 
+                    VerticalAlignment="Top" 
+                    Width="236"/>
+
+
+                <Path 
+                    Data="M81.35,156.937 L373.799,156.937" 
+                    Fill="White" 
+                    HorizontalAlignment="Left" 
+                    Height="1" 
+                    Margin="350,612,0,0" 
+                    Stretch="Fill" 
+                    Stroke="White" 
+                    VerticalAlignment="Top" 
+                    Width="293.449"/>
+
+                <TextBox 
+                    x:Name = "Result"
+                    HorizontalAlignment="Left" 
+                    Height="34" 
+                    Margin="350,578,0,0" 
+                    TextWrapping="Wrap"  
+                    VerticalAlignment="Top" 
+                    Width="293" 
+                    Foreground="White" 
+                    SelectionBrush="#FF232629" 
+                    FontFamily="NSimSun" 
+                    FontSize="16" 
+                    HorizontalContentAlignment="Left" 
+                    VerticalContentAlignment="Center" MaxLength="12"
+                    Text="{Binding Result, UpdateSourceTrigger=PropertyChanged}"/>
+
+                <TextBlock IsHitTestVisible="False" FontFamily="NSimSun" Text="Result" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="350,586,0,0" Foreground="White"  FontSize="16" Height="25" Width="293">
+                    <TextBlock.Style>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Text, ElementName=Result}" Value="">
+                                    <Setter Property="Visibility" Value="Visible"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+
+                <Rectangle 
+                    HorizontalAlignment="Left" 
+                    Height="40" 
+                    Margin="421,672,0,0" 
+                    VerticalAlignment="Top" 
+                    Width="157" 
+                    Stroke="White"/>
+
+                <Button 
+                    Content="Buy" 
+                    HorizontalAlignment="Left" 
+                    Height="41" 
+                    Margin="421,672,0,0" 
+                    VerticalAlignment="Top" 
+                    Width="157" 
+                    RenderTransformOrigin="0.495,1.19" 
+                    Background="{x:Null}" 
+                    BorderBrush="{x:Null}" 
+                    Foreground="White" 
+                    FontFamily="NSimSun" 
+                    FontSize="16"               
+                    Command="{Binding DisplayResultCommand}"/>
+
+                <TextBlock 
+                    IsHitTestVisible="False" 
+                    FontFamily="NSimSun"            
+                    VerticalAlignment="Top" 
+                    HorizontalAlignment="Left"
+                    Margin="350,511,0,0" 
+                    Foreground="DarkRed"
+                    FontSize="16" 
+                    Height="25" 
+                    Width="293"
+                    DataContext="{Binding ErrorMessageViewModel}"
+                    Text="{Binding Message}"     
+                    Visibility="{Binding HasMessage, Converter={StaticResource BooleanToVisibilityConverter}}">
+
+
+                    <TextBlock.Style>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+
+            </Grid>
+        </Grid>
+    </Border>
+</UserControl>
