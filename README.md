@@ -16,9 +16,9 @@ Free to use, change, etc.
 
 #### Interaction with login/register control:
 
-<h5>To get started, you must register at least one user and administrator account. After that, this data will be transferred to the database and the next time you only need to log in.</h5>
+To get started, you must register at least one user and administrator account. After that, this data will be transferred to the database and the next time you only need to log in.
   
-<h5>After registration, you need to go to the authorization window, enter the login and password and, first, click on the Login as Admin key. If the data was invalid, you will be thrown an Exception. </h5>
+After registration, you need to go to the authorization window, enter the login and password and, first, click on the Login as Admin key. If the data was invalid, you will be thrown an Exception. 
 
 ![loginHiL](https://github.com/Deshq/HiL_Store/blob/master/HiL_Store/Resources/Screenshots/loginHiL.gif?raw=true)
   
@@ -26,19 +26,19 @@ Free to use, change, etc.
   
 #### Interaction with admin control:
   
-<h5>After successful authorization, you will see a display for the administrator in which you can create all the entities you need, such as, Category, Products and others. </h5>
+After successful authorization, you will see a display for the administrator in which you can create all the entities you need, such as, Category, Products and others. 
   
-<h5>You can then click on the Exit button in the lower right corner and log in as a user. </h5>
+You can then click on the Exit button in the lower right corner and log in as a user. 
    
 ![adminHiL](https://github.com/Deshq/HiL_Store/blob/master/HiL_Store/Resources/Screenshots/adminHiL.gif?raw=true)
   
 ---
   
-#### Interaction with control:
+#### Interaction with user control:
 
-<h5>After successful authorization as a user, you will be presented with a display for the user, where you can select a category and get a list of products in that category.</h5>
+After successful authorization as a user, you will be presented with a display for the user, where you can select a category and get a list of products in that category.
   
-<h5>You can view products and their descriptions, select specific products, determine the quantity and buy them.</h5>
+You can view products and their descriptions, select specific products, determine the quantity and buy them.
 
 ![userHiL](https://github.com/Deshq/HiL_Store/blob/master/HiL_Store/Resources/Screenshots/userHiL.gif?raw=true)
   
