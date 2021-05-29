@@ -10,6 +10,7 @@
     <None Remove="Resources\admin.png" />
     <None Remove="Resources\bebop.jpg" />
     <None Remove="Resources\HiL.png" />
+    <None Remove="Resources\Screenshots\loginHiL.gif" />
     <None Remove="Resources\store.jpg" />
   </ItemGroup>
 
@@ -33,6 +34,7 @@
   <ItemGroup>
     <Resource Include="Resources\bebop.jpg" />
     <Resource Include="Resources\HiL.png" />
+    <Resource Include="Resources\Screenshots\loginHiL.gif" />
     <Resource Include="Resources\store.jpg" />
   </ItemGroup>
 
